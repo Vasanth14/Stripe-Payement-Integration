@@ -2,7 +2,7 @@
 
 require 'vendor/autoload.php';
 
-$stripe = new \Stripe\StripeClient('sk_test_51NFgToSBOfbzqDqufxLhSA2zm4u5ldf719ZWW8vzZAg7hvLwua1H8ZhmfZ5pyWyHxtCipKJsKiLmhlHzkrx684pp006aPNrT6m');
+$stripe = new \Stripe\StripeClient('');
 
 $checkout_session = $stripe->checkout->sessions->create([
   'line_items' => [[
