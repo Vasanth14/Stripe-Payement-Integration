@@ -4,7 +4,7 @@ require_once('vendor/autoload.php');
 
 // Set your secret key. Remember to switch to your live secret key in production.
 // See your keys here: https://dashboard.stripe.com/apikeys
-$stripe = new \Stripe\StripeClient('sk_test_51NFgToSBOfbzqDqufxLhSA2zm4u5ldf719ZWW8vzZAg7hvLwua1H8ZhmfZ5pyWyHxtCipKJsKiLmhlHzkrx684pp006aPNrT6m');
+$stripe = new \Stripe\StripeClient('');
 
 try {
     $session = $stripe->checkout->sessions->create([
